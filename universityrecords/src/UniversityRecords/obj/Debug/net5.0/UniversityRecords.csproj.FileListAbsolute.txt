@@ -1,0 +1,16 @@
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\bin\Debug\net5.0\UniversityRecords.exe
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\bin\Debug\net5.0\UniversityRecords.deps.json
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\bin\Debug\net5.0\UniversityRecords.runtimeconfig.json
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\bin\Debug\net5.0\UniversityRecords.runtimeconfig.dev.json
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\bin\Debug\net5.0\UniversityRecords.dll
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\bin\Debug\net5.0\ref\UniversityRecords.dll
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\bin\Debug\net5.0\UniversityRecords.pdb
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\UniversityRecords.csprojAssemblyReference.cache
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\UniversityRecords.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\UniversityRecords.AssemblyInfoInputs.cache
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\UniversityRecords.AssemblyInfo.cs
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\UniversityRecords.csproj.CoreCompileInputs.cache
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\UniversityRecords.dll
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\ref\UniversityRecords.dll
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\UniversityRecords.pdb
+C:\Users\shubham.soni\universityrecords\src\UniversityRecords\obj\Debug\net5.0\UniversityRecords.genruntimeconfig.cache
