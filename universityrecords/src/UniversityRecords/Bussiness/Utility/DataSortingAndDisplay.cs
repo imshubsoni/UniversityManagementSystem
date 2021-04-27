@@ -14,18 +14,20 @@ namespace UniversityRecords
             var ApplicantData = applicantData;
             foreach(var applicant in ApplicantData)
             {
-                Console.WriteLine($"Name: {applicant.Name}\t\tAge: {applicant.Age}\t\tPercentage: {applicant.Percentage}\n");
+                Console.WriteLine($"Name: {applicant.Name}\t\tAge: {applicant.Age}\t\tPercentage: {applicant.Percentage}");
             }
+            Console.WriteLine();
         }
 
         public void ShowEntryInFailedApplicantData(List<Applicant> failedApplicantData)
         {
             var FailedApplicantData = failedApplicantData;
-            Console.WriteLine("\n\nFailed Applicants :");
+            Console.WriteLine("\nFailed Applicants :");
             foreach(var applicant in FailedApplicantData)
             {
-               Console.WriteLine($"Name: {applicant.Name}\t\tAge: {applicant.Age}\t\tPercentage: {applicant.Percentage}\n"); 
+               Console.WriteLine($"Name: {applicant.Name}\t\tAge: {applicant.Age}\t\tPercentage: {applicant.Percentage}"); 
             }
+            Console.WriteLine();
         }
 
         public void SortDataOnNameThenPercentage(List<Applicant> applicantData)
@@ -37,8 +39,9 @@ namespace UniversityRecords
 
             foreach(var applicant in SortedApplicantData)
             {
-                Console.WriteLine($"Name: {applicant.Name}");
+                Console.WriteLine($"Name: {applicant.Name}\t\tAge: {applicant.Age}\t\tPercentage: {applicant.Percentage}");
             }
+            Console.WriteLine();
         }
 
         public void ShowApplicantsWithGradeA(List<Applicant> applicantData)
@@ -54,11 +57,12 @@ namespace UniversityRecords
             }
             else
             {
-                Console.WriteLine("\n\nApplicants with Grade A :\n");
+                Console.WriteLine("\nApplicants with Grade A :\n");
                 foreach(var applicant in SelectApplicantsWithGradeA)
                 {
-                    Console.WriteLine($"Name - {applicant.Name}\nAge - {applicant.Age}\nPercentage - {applicant.Percentage}\n\n");
+                    Console.WriteLine($"Name - {applicant.Name}\nAge - {applicant.Age}\nPercentage - {applicant.Percentage}");
                 }
+                Console.WriteLine();
             }
         }
     }

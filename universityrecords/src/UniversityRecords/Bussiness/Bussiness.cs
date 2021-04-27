@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace UniversityRecords
@@ -9,26 +10,51 @@ namespace UniversityRecords
         private DataSortingAndDisplay DisplayData = new DataSortingAndDisplay();
         private DataReader ReadData = new DataReader();
 
+        // This is the Start() method, which will call all other functions which needs to be implemeted -
+        // - read the data from input file, sorting the data, and displaying the data on console.
         public void Start()
         {
             ReadData.ReadInputDataFromUniversityRecordFile(DataLayerObject.UniversityRecordFilePath);
+            Console.WriteLine("\nAll Data Successfully stored.\n");
 
             List<Applicant> applicantData = SplitData.ReturnApplicantData();
             List<Applicant> failedApplicantData = SplitData.ReturnFailedApplicantData(); 
 
-            // ReadData.PrintData();
+            while(true)
+            {
+                Console.WriteLine(DataLayerObject.WelcomeMessage);
+                char userInput = Console.ReadLine()[0];
 
-            // List<Applicant> applicantData = ReadData.ReturnApplicantDataFromDataReader();
-            // List<Applicant> failedApplicantData = ReadData.ReturnFailedApplicantDataFromDataReader();
+                Console.Clear();
 
-            DisplayData.ShowEntryInApplicantData(applicantData);
+                if(userInput == 'Q')
+                {
+                    break;
+                }
+  
+                switch(userInput)
+                {
+                    case 'A':
+                        DisplayData.ShowEntryInApplicantData(applicantData);
+                        break;
 
-            DisplayData.ShowEntryInFailedApplicantData(failedApplicantData);
+                    case 'B':
+                        DisplayData.ShowEntryInFailedApplicantData(failedApplicantData);
+                        break;
 
-            DisplayData.SortDataOnNameThenPercentage(applicantData);
+                    case 'C':
+                        DisplayData.SortDataOnNameThenPercentage(applicantData);
+                        break;
 
-            DisplayData.ShowApplicantsWithGradeA(applicantData);
+                    case 'D':
+                        DisplayData.ShowApplicantsWithGradeA(applicantData);
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid input");
+                        break;
+                }
+            }
         }
-
     }
 }

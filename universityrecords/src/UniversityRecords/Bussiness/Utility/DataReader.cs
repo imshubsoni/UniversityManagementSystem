@@ -8,6 +8,9 @@ namespace UniversityRecords
     { 
         private DataSplit splitData = new DataSplit();
 
+        // This is the first function to be called from Start() method
+        // This function read the file and check for all the exceptions which needs to be handled.
+        // It calls another method - SplitTheData() - to categorize data and store them in lists.
         public void ReadInputDataFromUniversityRecordFile(string fileName)
         {
             string line;
@@ -16,6 +19,8 @@ namespace UniversityRecords
             {  
                 try
                 {
+                    // this method will run for each and every line of input file.
+                    // This method will check for any exceptions and if not found, will store the data into list
                     splitData.SplitTheData(line);
                 }
                 catch (AgeOutOfRangeException e)
@@ -31,27 +36,7 @@ namespace UniversityRecords
                     Console.WriteLine(e.Message);
                 }
             }  
-            file.Close(); // TODO: Security Concern
-        }
-
-        public void PrintData()
-        {
-            List<Applicant> applicantData = splitData.ReturnApplicantData();
-            
-            foreach (var applicant in applicantData)
-            {
-                Console.WriteLine($"Name: {applicant.Name}");
-            }
-        }
-
-        public List<Applicant> ReturnApplicantDataFromDataReader()
-        {
-            return splitData.ReturnApplicantData();
-        }
-
-        public List<Applicant> ReturnFailedApplicantDataFromDataReader()
-        {
-            return splitData.ReturnFailedApplicantData();
+            file.Close();
         }
     }
 }
